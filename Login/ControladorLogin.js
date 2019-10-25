@@ -20,7 +20,7 @@ app2.controller('loginCtrl', function($scope, servicioLogin,usuari) {
         getData.then(function (usuario) {
             usuari.setdatusuario(usuario.data);
             $scope.usr = usuari.getdatusuario();
-            window.location.href = "index.html";
+            //window.location.href = "index.html";
         },function () {
             alert('Error in getting records');
         });
